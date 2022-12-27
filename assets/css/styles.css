@@ -1,0 +1,86 @@
+
+* {
+    font-family: 'Oswald', sans-serif;
+}
+
+a {
+    cursor: pointer;
+}
+
+body {
+    background-color: #252525;
+}
+
+.navbar {
+    --bs-navbar-padding-y: 0;
+}
+
+.navbar-brand img {
+    width: 3.8rem;
+    filter: invert();
+}
+
+.navbar-toggler-icon {
+    filter: invert();   
+}
+
+main, section {
+    margin: 4rem 0;
+}
+
+section {
+    scroll-margin-top: 8rem;
+}
+
+.carousel-item {
+    height: 85vh;
+}
+
+.carousel-item::before {
+    content: '';
+    background: linear-gradient(transparent, rgb(37, 37, 37));
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card, .form-container {
+    background-color: rgba(255, 255, 255, .1);
+    margin-bottom: 1rem;
+}
+
+.about-img {
+    margin-top: 1rem;
+}
+
+.tab-pane, .nav-link, .nav-link:hover, .card-title, .card-text, .location h2, footer, label {
+    color: #fff;
+}
+
+.location {
+    margin-bottom: 6rem;
+}
+
+.location h2 {
+    margin-bottom: 2rem;
+}
+
+footer img {
+    filter: invert();
+}
+
+footer a {
+    color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    .d-flex {
+        flex-direction: column;
+    }
+}

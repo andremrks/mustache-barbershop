@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Mustache Barbershop</title>
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/images/logo.png" alt="Fauget Barbershop Logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item fs-5">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item fs-5">
+                <a class="nav-link" href="#about">About us</a>
+              </li>
+              <li class="nav-item fs-5">
+                <a class="nav-link" href="#tabs">Informations</a>
+              </li>
+              <li class="nav-item fs-5">
+                <a class="nav-link" href="#location">Location</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-light" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Main -->
+      <main>
+
+        <!-- Carousel -->
+        <div id="m-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#m-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#m-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#m-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="./assets/images/image01.jpg" class="d-block w-100" alt="Haircut">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>CUT A LONG STORY SHORT</h5>
+                <p>A sharp and stylish haircut from Ted's expert barbers.</p>
+            </div>
+            </div>
+            <div class="carousel-item">
+            <img src="./assets/images/image02.jpg" class="d-block w-100" alt="Beard trim">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>THE TOMMY 'N' TURKISH</h5>
+                <p>Traditional beard trim, shave or shape-up.</p>
+            </div>
+            </div>
+            <div class="carousel-item">
+            <img src="./assets/images/image03.jpg" class="d-block w-100" alt="Haircut">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>THE FULL TED SERVICE</h5>
+                <p>Combine your choice of haircut with a beard design or expert shave.</p>
+            </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#m-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#m-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+    
+        <!-- Cards -->
+        <section id="about" class="container"> 
+            <div class="row">
+              <div class="col">
+                <div class="card container" style="width: 18rem;">
+                    <img src="./assets/images/imgCard01.jpg" class="card-img-top about-img" alt="Hair and Beard Treatment">
+                    <div class="card-body">
+                        <h5 class="card-title">Our Home</h5>
+                        <p class="card-text">Come visit us, close your eyes and relax. We'll make you feel like you're at home.</p>
+                        <a href="#location" class="btn btn-dark">Visit us</a>
+                    </div>
+                </div>
+              </div>
+              <div class="col ">
+                <div class="card container" style="width: 18rem;">
+                    <img src="./assets/images/imgCard02.jpg" class="card-img-top about-img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Our Home</h5>
+                        <p class="card-text">Come visit us, close your eyes and relax. We'll make you feel like you're at home.</p>
+                        <a href="#location" class="btn btn-dark">Visit us</a>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card container" style="width: 18rem;">
+                    <img src="./assets/images/imgCard03.jpg" class="card-img-top about-img" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Our Home</h5>
+                        <p class="card-text">Come visit us, close your eyes and relax. We'll make you feel like you're at home.</p>
+                        <a href="#location" class="btn btn-dark">Visit us</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <!-- Tabs -->
+        <section id="tabs" class="container">
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-treatments-tab" data-bs-toggle="tab" data-bs-target="#nav-treatments" type="button" role="tab" aria-controls="nav-treatments" aria-selected="true">Treatments</button>
+              <button class="nav-link" id="nav-gallery-tab" data-bs-toggle="tab" data-bs-target="#nav-gallery" type="button" role="tab" aria-controls="nav-gallery" aria-selected="false">Gallery</button>
+              <button class="nav-link" id="nav-shop-tab" data-bs-toggle="tab" data-bs-target="#nav-shop" type="button" role="tab" aria-controls="nav-shop" aria-selected="false">Shop</button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <!-- Treatments Cards -->
+            <div class="tab-pane fade show active" id="nav-treatments" role="tabpanel" aria-labelledby="nav-treatments-tab" tabindex="0">
+              <div class="row row-cols-1 row-cols-md-3 g-4 mt-2">
+                <div class="col">
+                  <div class="card">
+                    <img src="./assets/images/treatments/treatments01.jpg" class="card-img-top" alt="Hair and Beard Treatment">
+                    <div class="card-body">
+                      <h5 class="card-title">Beard Trim</h5>
+                      <p class="card-text">€15.00</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./assets/images/treatments/treatments02.jpg" class="card-img-top" alt="Hair and Beard Treatment">
+                    <div class="card-body">
+                      <h5 class="card-title">Beard Shave</h5>
+                      <p class="card-text">€10.00</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./assets/images/treatments/treatments03.jpg" class="card-img-top" alt="Hair and Beard Treatment">
+                    <div class="card-body">
+                      <h5 class="card-title">Haircut 1</h5>
+                      <p class="card-text">€15.00</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./assets/images/treatments/treatments04.jpg" class="card-img-top" alt="Hair and Beard Treatment">
+                    <div class="card-body">
+                      <h5 class="card-title">Haircut 2</h5>
+                      <p class="card-text">€18.00</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./assets/images/treatments/treatments05.jpg" class="card-img-top" alt="Hair and Beard Treatment">
+                    <div class="card-body">
+                      <h5 class="card-title">Beard Design</h5>
+                      <p class="card-text">€13.00</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./assets/images/treatments/treatments06.jpg" class="card-img-top" alt="Hair and Beard Treatment">
+                    <div class="card-body">
+                      <h5 class="card-title">Haircut 3</h5>
+                      <p class="card-text">€20.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <!-- Gallery Cards -->
+            <div class="tab-pane fade" id="nav-gallery" role="tabpanel" aria-labelledby="nav-gallery-tab" tabindex="0">
+              <div class="row row-cols-1 row-cols-md-3 g-4 mt-2">
+                <div class="col">
+                  <div class="card">
+                    <img src="./assets/images/gallery/gallery01.jpg" class="card-img-top" alt="Hair and Beard Treatment">
+                    <div class="card-body">
+                      <h5 class="card-title">Our Home</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./assets/images/gallery/gallery02.jpg" class="card-img-top" alt="Hair and Beard Treatment">
+                    <div class="card-body">
+                      <h5 class="card-title">Our Home</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./assets/images/gallery/gallery03.jpg" class="card-img-top" alt="Hair and Beard Treatment">
+                    <div class="card-body">
+                      <h5 class="card-title">Our Home</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./assets/images/gallery/gallery04.jpg" class="card-img-top" alt="Hair and Beard Treatment">
+                    <div class="card-body">
+                      <h5 class="card-title">Our Home</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./assets/images/gallery/gallery05.jpg" class="card-img-top" alt="Hair and Beard Treatment">
+                    <div class="card-body">
+                      <h5 class="card-title">Our Home</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./assets/images/gallery/gallery06.jpg" class="card-img-top" alt="Hair and Beard Treatment">
+                    <div class="card-body">
+                      <h5 class="card-title">Our Home</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-shop" role="tabpanel" aria-labelledby="nav-shop-tab" tabindex="0">
+              <div class="row row-cols-1 row-cols-md-3 g-4 mt-2">
+                <div class="col">
+                  <div class="card">
+                    <img src="./assets/images/shop/shop01.jpg" class="card-img-top" alt="Hair and Beard Treatment">
+                    <div class="card-body">
+                      <h5 class="card-title">Balm</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./assets/images/shop/shop02.jpg" class="card-img-top" alt="Hair and Beard Treatment">
+                    <div class="card-body">
+                      <h5 class="card-title">Hair Dressing</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./assets/images/shop/shop03.jpg" class="card-img-top" alt="Hair and Beard Treatment">
+                    <div class="card-body">
+                      <h5 class="card-title">Hair Dressing</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./assets/images/shop/shop04.jpg" class="card-img-top" alt="Hair and Beard Treatment">
+                    <div class="card-body">
+                      <h5 class="card-title">Spray</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./assets/images/shop/shop05.jpg" class="card-img-top" alt="Hair and Beard Treatment">
+                    <div class="card-body">
+                      <h5 class="card-title">Balm</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./assets/images/shop/shop06.jpg" class="card-img-top" alt="Hair and Beard Treatment">
+                    <div class="card-body">
+                      <h5 class="card-title">Hair Clipper</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+        <!-- Location -->
+        <section id="location" class="location container">
+          <h2 class="container text-center">Make an appointment</h2>
+          <!-- Form -->
+          <div class="d-flex justify-content-between">
+            <div class="container form-container">
+              <div class="mb-3 mt-2">
+                <label for="exampleFormControlInput1" class="form-label fs-5">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label fs-5">Phone number</label>
+                <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="xxx xxx xxx">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label mt-3 fs-5">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your message"></textarea>
+                <button type="button" class="btn btn-light mt-5 fs-5">Send</button>
+              </div>
+            </div>
+            <!-- Map -->
+            <div class="mapouter container">
+              <div class="gmap_canvas">
+                <iframe width="100%" height="440" id="gmap_canvas" src="https://maps.google.com/maps?q=Dublin&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+
+      </main>
+    
+      <footer class="text-center mt-5">
+        <img src="./assets/images/logo.png" alt="Mustache Barbershop Logo">
+        <p>Copyright © 2022 <a href="https://andremrks.github.io/social-links/" target="_blank">André Marques</a> All Right Reserved</p>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+  </body>
+</html>
